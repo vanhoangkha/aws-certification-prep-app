@@ -317,7 +317,7 @@ const DashboardPage = () => {
           {/* Welcome Banner */}
           <Alert
             type="success"
-            header="Welcome back! 🎉"
+            header="Welcome back!"
             action={
               <Button variant="primary">
                 Continue Studying
