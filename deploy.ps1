@@ -1,15 +1,15 @@
 # AWS Certification Platform - PowerShell Deployment Script
 # This script automates the deployment process for Windows
 
-Write-Host "🚀 Starting AWS Certification Platform Deployment..." -ForegroundColor Green
+Write-Host "Starting AWS Certification Platform Deployment..." -ForegroundColor Green
 Write-Host "==================================================" -ForegroundColor Green
 
 # Check if Amplify CLI is installed
 try {
     amplify --version | Out-Null
-    Write-Host "✅ Amplify CLI found" -ForegroundColor Green
+    Write-Host "Amplify CLI found" -ForegroundColor Green
 } catch {
-    Write-Host "❌ Amplify CLI not found. Please install it first:" -ForegroundColor Red
+    Write-Host "Amplify CLI not found. Please install it first:" -ForegroundColor Red
     Write-Host "npm install -g @aws-amplify/cli" -ForegroundColor Yellow
     exit 1
 }
@@ -17,56 +17,56 @@ try {
 # Check if AWS CLI is configured
 try {
     aws sts get-caller-identity | Out-Null
-    Write-Host "✅ AWS CLI configured" -ForegroundColor Green
+    Write-Host "AWS CLI configured" -ForegroundColor Green
 } catch {
-    Write-Host "❌ AWS CLI not configured or credentials invalid" -ForegroundColor Red
+    Write-Host "AWS CLI not configured or credentials invalid" -ForegroundColor Red
     Write-Host "Please run: aws configure" -ForegroundColor Yellow
     exit 1
 }
 
-Write-Host "✅ Prerequisites check passed" -ForegroundColor Green
+Write-Host "Prerequisites check passed" -ForegroundColor Green
 
 # Build frontend
-Write-Host "📦 Building frontend application..." -ForegroundColor Cyan
+Write-Host "Building frontend application..." -ForegroundColor Cyan
 npm run build
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Frontend build failed" -ForegroundColor Red
+    Write-Host "Frontend build failed" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "✅ Frontend build successful" -ForegroundColor Green
+Write-Host "Frontend build successful" -ForegroundColor Green
 
 # Deploy backend
-Write-Host "🔧 Deploying backend infrastructure..." -ForegroundColor Cyan
+Write-Host "Deploying backend infrastructure..." -ForegroundColor Cyan
 amplify push --yes
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Backend deployment failed" -ForegroundColor Red
+    Write-Host "Backend deployment failed" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "✅ Backend deployment successful" -ForegroundColor Green
+Write-Host "Backend deployment successful" -ForegroundColor Green
 
 # Deploy frontend
-Write-Host "🌐 Deploying frontend to Amplify Hosting..." -ForegroundColor Cyan
+Write-Host "Deploying frontend to Amplify Hosting..." -ForegroundColor Cyan
 amplify publish --yes
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Frontend deployment failed" -ForegroundColor Red
+    Write-Host "Frontend deployment failed" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "✅ Frontend deployment successful" -ForegroundColor Green
+Write-Host "Frontend deployment successful" -ForegroundColor Green
 
 # Get deployment info
-Write-Host "📊 Deployment Information:" -ForegroundColor Cyan
+Write-Host "Deployment Information:" -ForegroundColor Cyan
 Write-Host "==========================" -ForegroundColor Cyan
 amplify status
 
 Write-Host ""
-Write-Host "🎉 Deployment completed successfully!" -ForegroundColor Green
-Write-Host "🌐 Your AWS Certification Platform is now live!" -ForegroundColor Green
+Write-Host "Deployment completed successfully!" -ForegroundColor Green
+Write-Host "Your AWS Certification Platform is now live!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Next steps:" -ForegroundColor Yellow
 Write-Host "1. Configure custom domain (optional)" -ForegroundColor White

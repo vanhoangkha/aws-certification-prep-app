@@ -109,7 +109,7 @@ const DashboardPage: React.FC = () => {
       {/* Welcome Banner with Status */}
       <Alert
         type="success"
-        header={`Welcome back, ${user?.name || user?.email?.split('@')[0]}! 🎉`}
+        header={`Welcome back, ${user?.name || user?.email?.split('@')[0]}!`}
         action={
           <Button
             variant="primary"

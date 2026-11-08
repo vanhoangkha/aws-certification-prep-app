@@ -400,7 +400,7 @@ const UserDashboard: React.FC = () => {
             {userProgress.achievements.map((achievement, index) => (
               <Box key={index} padding="s" variant="outlined">
                 <SpaceBetween direction="vertical" size="xs">
-                  <Badge color="green">🏆</Badge>
+                  <Badge color="green"></Badge>
                   <div>
                     <strong>{achievement.title}</strong>
                   </div>

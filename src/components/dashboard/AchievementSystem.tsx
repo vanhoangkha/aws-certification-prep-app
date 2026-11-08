@@ -391,7 +391,7 @@ const AchievementSystem: React.FC<AchievementSystemProps> = ({
           <SpaceBetween direction="vertical" size="m">
             <Box textAlign="center">
               <SpaceBetween direction="vertical" size="s">
-                <Box variant="h1">🏆</Box>
+                <Box variant="h1"></Box>
                 <Box variant="h2">{selectedAchievement.title}</Box>
                 <Box>{selectedAchievement.description}</Box>
                 {getCategoryBadge(selectedAchievement.category)}

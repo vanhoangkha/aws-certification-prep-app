@@ -1,28 +1,28 @@
 # AWS Certification Practice Platform - Development Setup Script (PowerShell)
-Write-Host "🔧 Setting up AWS Certification Practice Platform for development..." -ForegroundColor Green
+Write-Host "Setting up AWS Certification Practice Platform for development..." -ForegroundColor Green
 
 # Check Node.js version
 try {
     $nodeVersion = node --version
-    Write-Host "✅ Node.js version: $nodeVersion" -ForegroundColor Green
+    Write-Host "Node.js version: $nodeVersion" -ForegroundColor Green
 } catch {
-    Write-Host "❌ Node.js is not installed. Please install Node.js 18 or later." -ForegroundColor Red
+    Write-Host "Node.js is not installed. Please install Node.js 18 or later." -ForegroundColor Red
     exit 1
 }
 
 # Install dependencies
-Write-Host "📦 Installing dependencies..." -ForegroundColor Yellow
+Write-Host "Installing dependencies..." -ForegroundColor Yellow
 npm install
 
 # Check if .env.local exists
 if (!(Test-Path ".env.local")) {
-    Write-Host "📝 Creating .env.local from example..." -ForegroundColor Yellow
+    Write-Host "Creating .env.local from example..." -ForegroundColor Yellow
     Copy-Item ".env.example" ".env.local"
-    Write-Host "⚠️  Please update .env.local with your actual AWS configuration" -ForegroundColor Yellow
+    Write-Host "Please update .env.local with your actual AWS configuration" -ForegroundColor Yellow
 }
 
 # Create necessary directories
-Write-Host "📁 Creating necessary directories..." -ForegroundColor Yellow
+Write-Host "Creating necessary directories..." -ForegroundColor Yellow
 $directories = @(
     "amplify/backend/function/questionManagement/src",
     "amplify/backend/function/examEngine/src",
@@ -42,7 +42,7 @@ foreach ($dir in $directories) {
 }
 
 # Install Lambda function dependencies
-Write-Host "📦 Installing Lambda function dependencies..." -ForegroundColor Yellow
+Write-Host "Installing Lambda function dependencies..." -ForegroundColor Yellow
 $functions = @("questionManagement", "examEngine", "scoringEngine", "analyticsEngine", "pdfGenerator")
 
 foreach ($func in $functions) {
@@ -56,17 +56,17 @@ foreach ($func in $functions) {
 }
 
 # Build the project to check for errors
-Write-Host "🔨 Building project to check for errors..." -ForegroundColor Yellow
+Write-Host "Building project to check for errors..." -ForegroundColor Yellow
 npm run build
 
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "✅ Build successful!" -ForegroundColor Green
+    Write-Host "Build successful!" -ForegroundColor Green
 } else {
-    Write-Host "❌ Build failed. Please check the errors above." -ForegroundColor Red
+    Write-Host "Build failed. Please check the errors above." -ForegroundColor Red
     exit 1
 }
 
-Write-Host "🎉 Development environment setup complete!" -ForegroundColor Green
+Write-Host "Development environment setup complete!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Next steps:" -ForegroundColor Cyan
 Write-Host "1. Update .env.local with your AWS configuration" -ForegroundColor White
