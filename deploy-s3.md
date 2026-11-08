@@ -1,4 +1,4 @@
-# 🚀 Deploy to S3 Static Hosting - Quick Solution
+# Deploy to S3 Static Hosting - Quick Solution
 
 ## Vì có TypeScript errors, chúng ta sẽ deploy static version
 
@@ -79,16 +79,16 @@ aws cloudfront create-distribution --distribution-config '{
 }'
 ```
 
-## 🎯 Expected Result
+## Expected Result
 
 After deployment:
-- ✅ **Static Website**: Working with sample questions
-- ✅ **Demo Mode**: All features work in demo mode
-- ✅ **Sample Questions**: 10 questions available
-- ✅ **Responsive Design**: Works on mobile and desktop
-- ✅ **Fast Loading**: Static files served from S3/CloudFront
+- **Static Website**: Working with sample questions
+- **Demo Mode**: All features work in demo mode
+- **Sample Questions**: 10 questions available
+- **Responsive Design**: Works on mobile and desktop
+- **Fast Loading**: Static files served from S3/CloudFront
 
-## 📞 Next Steps
+## Next Steps
 
 1. **Fix TypeScript Errors**: Clean up the codebase
 2. **Add Real Backend**: Deploy Amplify backend later

@@ -1,8 +1,8 @@
-# 🚀 Manual Deployment Guide - AWS Certification Platform
+# Manual Deployment Guide - AWS Certification Platform
 
-## 📋 Current Status
+## Current Status
 
-**✅ 100% Implementation Complete**
+**100% Implementation Complete**
 - All 5 Lambda functions implemented (4,000+ lines of code)
 - Complete React frontend with 50+ components
 - GraphQL schema with 15+ resolvers
@@ -10,7 +10,7 @@
 - S3 storage configuration
 - Cognito authentication setup
 
-## 🛠️ Manual Deployment Steps
+## Manual Deployment Steps
 
 Since automated Amplify deployment is encountering credential issues, here's how to deploy manually:
 
@@ -189,7 +189,7 @@ VITE_AWS_USER_POOL_WEB_CLIENT_ID=your-client-id
 VITE_AWS_APPSYNC_GRAPHQL_ENDPOINT=your-endpoint
 ```
 
-## 🎯 Quick Deploy Options
+## Quick Deploy Options
 
 ### Option 1: Serverless Framework
 ```bash
@@ -210,7 +210,7 @@ terraform plan
 terraform apply
 ```
 
-## 📊 What You'll Have After Deployment
+## What You'll Have After Deployment
 
 ### Live Platform Features
 - **Student Portal**: Complete exam simulation
@@ -226,7 +226,7 @@ terraform apply
 - **Storage**: S3 buckets
 - **Auth**: Cognito User Pools
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 1. **CORS Errors**: Configure API Gateway CORS
@@ -239,17 +239,17 @@ terraform apply
 - Amplify Troubleshooting Guide
 - CloudWatch Logs for debugging
 
-## 🎉 Success Metrics
+## Success Metrics
 
 Once deployed, you'll have:
-- ✅ **Fully functional platform**
-- ✅ **Scalable serverless architecture**
-- ✅ **Professional UI/UX**
-- ✅ **Enterprise security**
-- ✅ **Cost-effective operation**
+- **Fully functional platform**
+- **Scalable serverless architecture**
+- **Professional UI/UX**
+- **Enterprise security**
+- **Cost-effective operation**
 
 ---
 
-**🚀 Your AWS Certification Platform is ready to serve thousands of users!**
+**Your AWS Certification Platform is ready to serve thousands of users!**
 
 **Note**: While automated Amplify deployment encountered issues, the platform is 100% complete and can be deployed using any of the manual methods above.

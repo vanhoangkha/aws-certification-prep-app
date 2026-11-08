@@ -1,6 +1,6 @@
-# 🚀 AWS Certification Practice Platform - Deployment Guide
+# AWS Certification Practice Platform - Deployment Guide
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### 1. Install Required Tools
 ```bash
@@ -44,7 +44,7 @@ npm install
 cp .env.example .env.local
 ```
 
-## 🏗️ Deployment Steps
+## Deployment Steps
 
 ### Step 1: Initialize Amplify Project
 ```bash
@@ -182,7 +182,7 @@ amplify publish
 # Your app will be available at: https://main.d[app-id].amplifyapp.com
 ```
 
-## 🔧 Post-Deployment Configuration
+## Post-Deployment Configuration
 
 ### 1. Update Environment Variables
 ```bash
@@ -229,7 +229,7 @@ amplify add hosting
 # Enable automatic deployments
 ```
 
-## 🧪 Testing Deployment
+## Testing Deployment
 
 ### 1. Verify Backend Services
 ```bash
@@ -253,7 +253,7 @@ curl -X POST \
 # Check results and analytics
 ```
 
-## 🔍 Monitoring and Maintenance
+## Monitoring and Maintenance
 
 ### 1. Set up CloudWatch Monitoring
 ```bash
@@ -279,7 +279,7 @@ curl -X POST \
 # Set up cross-region replication
 ```
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -317,7 +317,7 @@ curl -X POST \
 - Use AWS Support (if you have a support plan)
 - Check GitHub issues and discussions
 
-## 📊 Cost Estimation
+## Cost Estimation
 
 ### Monthly Costs (Estimated)
 - **Cognito**: $0-50 (depending on users)
@@ -335,7 +335,7 @@ curl -X POST \
 - Use CloudFront caching effectively
 - Monitor and set up billing alerts
 
-## 🎉 Success!
+## Success!
 
 Your AWS Certification Practice Platform is now deployed and ready for use!
 

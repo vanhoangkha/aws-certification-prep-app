@@ -1,4 +1,4 @@
-# 🚀 Manual Deployment Guide - AWS Amplify Console
+# Manual Deployment Guide - AWS Amplify Console
 
 ## Vì session token có thể hết hạn, chúng ta sẽ deploy thông qua AWS Console
 
@@ -114,16 +114,16 @@ VITE_ENABLE_ANALYTICS=true
    - Verify Lambda functions execute
    - Check DynamoDB data
 
-## 🎯 Expected Results
+## Expected Results
 
 After manual deployment:
-- ✅ **App URL**: `https://main.d[app-id].amplifyapp.com`
-- ✅ **Authentication**: Working with Cognito
-- ✅ **Sample Questions**: 10 questions available
-- ✅ **Exam Simulation**: Timer and navigation working
-- ✅ **Results**: Score calculation and display
+- **App URL**: `https://main.d[app-id].amplifyapp.com`
+- **Authentication**: Working with Cognito
+- **Sample Questions**: 10 questions available
+- **Exam Simulation**: Timer and navigation working
+- **Results**: Score calculation and display
 
-## 📞 Alternative: Use AWS CDK
+## Alternative: Use AWS CDK
 
 If manual deployment is complex, we can also use AWS CDK:
 
