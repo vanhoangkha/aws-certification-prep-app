@@ -1,6 +1,6 @@
-# 🚀 Quick Start Guide - AWS Certification Practice Platform
+# Quick Start Guide - AWS Certification Practice Platform
 
-## ⚡ 5-Minute Setup
+## 5-Minute Setup
 
 ### 1. Prerequisites Check
 ```bash
@@ -37,11 +37,11 @@ amplify push
 amplify publish
 ```
 
-## 🎯 What You Get
+## What You Get
 
 After deployment, your platform will have:
 
-### ✅ **Core Features**
+### **Core Features**
 - **User Authentication** with Cognito (email + Google login)
 - **Question Bank** with 10 sample SAP-C02 questions
 - **Exam Simulation** with timer and navigation
@@ -49,7 +49,7 @@ After deployment, your platform will have:
 - **Admin Dashboard** for question management
 - **Progress Tracking** with visual charts
 
-### ✅ **AWS Services**
+### **AWS Services**
 - **Frontend**: Amplify Hosting + CloudFront
 - **Authentication**: Cognito User Pools
 - **API**: AppSync GraphQL
@@ -58,7 +58,7 @@ After deployment, your platform will have:
 - **Functions**: 5 Lambda functions
 - **Monitoring**: CloudWatch
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables (.env.local)
 ```bash
@@ -78,7 +78,7 @@ amplify console api    # For API endpoint
 amplify console auth   # For Cognito details
 ```
 
-## 🧪 Testing Your Deployment
+## Testing Your Deployment
 
 ### 1. Access Your App
 ```bash
@@ -103,7 +103,7 @@ amplify status
 # Create a user and add to "admin" group
 ```
 
-## 📊 Demo Data
+## Demo Data
 
 The platform comes with:
 - **10 Sample Questions** (SAP-C02 certification)
@@ -111,7 +111,7 @@ The platform comes with:
 - **Multiple difficulty levels** (Easy, Medium, Hard)
 - **Complete explanations** and references
 
-## 🔄 Development Workflow
+## Development Workflow
 
 ### Local Development
 ```bash
@@ -146,7 +146,7 @@ amplify env checkout dev
 npm run deploy:staging
 ```
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -186,7 +186,7 @@ npm run build
 amplify push --force
 ```
 
-## 📈 Scaling & Production
+## Scaling & Production
 
 ### Performance Optimization
 - Enable CloudFront caching
@@ -206,7 +206,7 @@ amplify push --force
 - Error tracking and alerting
 - Performance monitoring
 
-## 🎉 Success Checklist
+## Success Checklist
 
 - [ ] App deployed and accessible
 - [ ] User registration/login working
@@ -217,7 +217,7 @@ amplify push --force
 - [ ] Mobile responsive design
 - [ ] Performance acceptable (<3s load time)
 
-## 📞 Support
+## Support
 
 ### Resources
 - [AWS Amplify Documentation](https://docs.amplify.aws/)
@@ -232,7 +232,7 @@ amplify push --force
 
 ---
 
-**🎯 Your AWS Certification Practice Platform is ready!**
+**Your AWS Certification Practice Platform is ready!**
 
 **Next Steps:**
 1. Add more questions to the question bank
@@ -241,4 +241,4 @@ amplify push --force
 4. Plan for user onboarding
 5. Consider additional certifications
 
-**Happy Learning! 🚀**
+**Happy Learning! **
